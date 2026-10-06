@@ -34,7 +34,7 @@ def outcomes():
                 # Too narrow to hold its number, so the count goes in the label after the bar.
                 unlabelled.append(f'{value} {name}')
             x += width
-        rows.append(f'<text x="{x + 6:.1f}" y="{y + 15}" fill="{MUTED}">{sum(counts)} posts</text>')
+        rows.append(f'<text x="{x + 6:.1f}" y="{y + 15}" fill="{MUTED}">{sum(counts)} owners</text>')
         if unlabelled:
             rows.append(f'<text x="{left}" y="{y + bar + 13}" fill="{MUTED}" font-size="10">{", ".join(unlabelled)}</text>')
     legend = []

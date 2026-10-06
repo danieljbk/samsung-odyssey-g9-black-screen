@@ -99,14 +99,14 @@ Table: **Table 1.** Faults documented behind the black screen.
 
 <figure>
 <img src="figures/outcomes.svg" alt="Every owner in the r/AskElectronics thread and the r/widescreengamingforum thread who reports removing the thermistor, read in full on 6 October 2026, by the board the post names">
-<figcaption><b>Figure 4.</b> Every owner in <a href="https://www.reddit.com/r/AskElectronics/comments/1dyi62v/">the r/AskElectronics thread</a> and <a href="https://www.reddit.com/r/widescreengamingforum/comments/10r8w19/">the r/widescreengamingforum thread</a> who reports removing the thermistor, read in full on 6 October 2026, by the board the post names. A board counts as named only when the post names the part or points to a photo of it. These are counts of posts, not a measured success rate.</figcaption>
+<figcaption><b>Figure 4.</b> Every owner in <a href="https://www.reddit.com/r/AskElectronics/comments/1dyi62v/">the r/AskElectronics thread</a> and <a href="https://www.reddit.com/r/widescreengamingforum/comments/10r8w19/">the r/widescreengamingforum thread</a> who reports removing the thermistor, read in full on 6 October 2026, by the board each names. Each owner counts once, whether they wrote the opening post or a comment; all but one are comments. A board counts as named only when the owner names the part or points to a photo of it. These are counts of reports, not a measured success rate.</figcaption>
 </figure>
 
-Of the 59 posts, 37 report a fix, 19 no change, 2 a worse result and 1 a fault that came back. Only 15 of the posts name the board: on the newer board, removal fixed 6 monitors and did not fix 8; on the original board, it fixed 2 and did not fix 1. Two of the failures were later fixed by removing a shorted part ([1][noset], [2][tenantlord]).
+Of the 59 owners, 37 report a fix, 19 no change, 2 a worse result and 1 a fault that came back. Only 15 of them name the board: on the newer board, removal fixed 6 monitors and did not fix 8; on the original board, it fixed 2 and did not fix 1. Two of the failures were later fixed by removing a shorted part ([1][noset], [2][tenantlord]).
 
 **How long it lasts.** Five owners give a time for which removal has held: six months ([u/pboksz][pboksz], [u/webjocky][webjocky]), about a year ([u/CommunityJazzlike512][communityjazz]), at least a year ([u/NSXelrate][nsxelrate]) and two years ([u/djbkwon][djbkwon-2years]). Three report the fault returning: after one day ([u/roughmind79][roughmind]), after about six months ([u/MntyFresh1][mntyfresh]), and in May after a fault the previous August ([u/cootersmooches][cootersmooches]).
 
-**What can go wrong.** [u/mkonowaluk][mkonowaluk] saw flashing lines down the screen after removal, and [u/samurai_sed][samurai] broke the part and the monitor then had no power. No post describes a monitor run for long with the part replaced by a new thermistor.
+**What can go wrong.** [u/mkonowaluk][mkonowaluk] saw flashing lines down the screen after removal, and [u/samurai_sed][samurai] broke the part and the monitor then had no power. No report describes a monitor run for long with the part replaced by a new thermistor.
 
 **What removal costs is not known.** Depending on what the thermistor input actually does ([section 7](#section-8)), a monitor without it either drives the panel's gate transistors harder at all temperatures, which panel makers' patents associate with more leakage ([BOE, US10553176B2][patent-leak]) and with stress on those transistors ([BOE, US10984879B2][patent-stress]), or runs without one protection input. Keeping the vents clear is the only practical precaution.
 
@@ -234,7 +234,7 @@ The original board is the better place to start, because its divider is traced t
 ## 10. Limits of the evidence {#section-11}
 
 - The board measurements come from two repair videos ([VINCE][vince], and [GOODWIN][goodwin] on a G7) and five owners with multimeters ([u/alphanimal][alphanimal-13v], [u/Positive-Bee4715][positivebee], [u/Sblombliz][sblombliz], [u/HayabusaGTR][hayabusa], [u/Emotional-Amount-954][emotional]). No one has put an oscilloscope on a G9 T-con.
-- Repair outcomes come from self-selected forum posts. The counts in figure 4 are counts of posts, not a measured success rate, and 44 of the 59 posts do not say which board the owner had.
+- Repair outcomes come from self-selected forum posts and comments. The counts in figure 4 are counts of owners' reports, not a measured success rate, and 44 of the 59 reports do not say which board the owner had.
 - The original board's assembly number, BN96-51198A, is inferred from its label and the parts lists, not printed on the board.
 - Seven Korean forum threads could not be read because of a bot check, and press and Russian-language coverage is thin.
 - This report was compiled by u/djbkwon with an AI research assistant. Every claim links to its source. To correct it, [open an issue or propose an edit on GitHub](https://github.com/danieljbk/samsung-odyssey-g9-black-screen); the PDF rebuilds itself from the corrected text.
