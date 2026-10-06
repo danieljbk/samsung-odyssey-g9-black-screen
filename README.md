@@ -2,6 +2,8 @@
 
 A guide for owners of a Samsung Odyssey G9 (C49G95T) or Odyssey Neo G9 (S49AG95) that lights up but shows no picture and no menu, and what is known about why it happens: the thermistor fix, where the thermistor is on each T-con board, the other faults behind the same symptom, and what Samsung has published.
 
+The report was researched and written by Claude, an AI model made by Anthropic, at the request of u/djbkwon.
+
 - **Read it as a PDF:** <https://danieljbk.github.io/samsung-odyssey-g9-black-screen/report.pdf>
 - **Read it as a web page:** <https://danieljbk.github.io/samsung-odyssey-g9-black-screen/>
 - **Read the source:** [report.md](report.md)

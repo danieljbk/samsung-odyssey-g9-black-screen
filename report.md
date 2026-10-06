@@ -132,15 +132,15 @@ Table: **Table 2.** The divider midpoint on one failing original G9, measured by
 | Thermistor refitted | 1.2&nbsp;V | No ([44:05][vince-refit]) |
 | Thermistor fitted, divider resistors changed to 10&nbsp;kΩ and 2.2&nbsp;kΩ | about 1.0&nbsp;V ([78:55][vince-10v]) | Yes ([82:01][vince-10v-works]) |
 
-The measured resistances reproduce both measured voltages: 0.64&nbsp;V without the thermistor and 1.19&nbsp;V with a 12&nbsp;kΩ thermistor (my calculation from [VINCE's readings][vince-resistors]). [u/alphanimal][alphanimal-13v], who first published the removal, measured 1.3&nbsp;V on their own failing monitor. Cooling the thermistor alone with an ice pack also brought that picture back for a while ([post][alphanimal-post]), and [u/East_Development_126][eastdev], who first found the part, narrowed it down by cooling one area of the board at a time with compressed air.
+The measured resistances reproduce both measured voltages: 0.64&nbsp;V without the thermistor and 1.19&nbsp;V with a 12&nbsp;kΩ thermistor (calculated for this report from [VINCE's readings][vince-resistors]). [u/alphanimal][alphanimal-13v], who first published the removal, measured 1.3&nbsp;V on their own failing monitor. Cooling the thermistor alone with an ice pack also brought that picture back for a while ([post][alphanimal-post]), and [u/East_Development_126][eastdev], who first found the part, narrowed it down by cooling one area of the board at a time with compressed air.
 
 The thermistor itself is not broken in the four cases where it was measured: [u/alphanimal][alphanimal-post] read 10&nbsp;kΩ just after removing it, [VINCE][vince-ntc] about 12&nbsp;kΩ at room temperature and 11&nbsp;kΩ warm, and [u/Emotional-Amount-954][emotional] 28&nbsp;kΩ on a removed P301, about right for a 33&nbsp;kΩ part at 28&nbsp;°C. [u/Sblombliz][sblombliz] found that the sensor's resistance changed smoothly with temperature.
 
 ### The trip point
 
 <figure>
-<img src="figures/divider-curve.svg" alt="The midpoint voltage on VINCE&#x27;s divider against the temperature the thermistor reports (my calculation, assuming the thermistor reads 12&amp;nbsp;kΩ at 22&amp;nbsp;°C with a typical B&amp;nbsp;=&amp;nbsp;3950&amp;nbsp;K curve)">
-<figcaption><b>Figure 6.</b> The midpoint voltage on VINCE's divider against the temperature the thermistor reports (my calculation, assuming the thermistor reads 12&nbsp;kΩ at 22&nbsp;°C with a typical B&nbsp;=&nbsp;3950&nbsp;K curve). The board failed at 1.2&nbsp;V and worked at 1.0&nbsp;V and at 0.64&nbsp;V.</figcaption>
+<img src="figures/divider-curve.svg" alt="The midpoint voltage on VINCE&#x27;s divider against the temperature the thermistor reports (calculated for this report, assuming the thermistor reads 12&amp;nbsp;kΩ at 22&amp;nbsp;°C with a typical B&amp;nbsp;=&amp;nbsp;3950&amp;nbsp;K curve)">
+<figcaption><b>Figure 6.</b> The midpoint voltage on VINCE's divider against the temperature the thermistor reports (calculated for this report, assuming the thermistor reads 12&nbsp;kΩ at 22&nbsp;°C with a typical B&nbsp;=&nbsp;3950&nbsp;K curve). The board failed at 1.2&nbsp;V and worked at 1.0&nbsp;V and at 0.64&nbsp;V.</figcaption>
 </figure>
 
 On VINCE's monitor the board failed at 1.2&nbsp;V and worked at 1.0&nbsp;V and below, so it has a trip point between those two voltages. On this divider, 1.2&nbsp;V corresponds to a thermistor reading of about 22&nbsp;°C and 1.0&nbsp;V to about 10&nbsp;°C. The board therefore failed while its sensor reported normal room temperature, and worked when the sensor reported a temperature below about 10&nbsp;°C, or no sensor at all.
@@ -178,7 +178,7 @@ The temperature reports do not point in one direction, and none of them comes fr
 - [An owner of the 57-inch model][givemelove] put the whole monitor in outdoor air at about 2&nbsp;°C (35&nbsp;°F), with no change.
 - [A summer failure][pboksz-summer] and [a failure after weeks in a 35&nbsp;°C room][hardwareluxx] sit alongside the cold-weather reports.
 
-The [240&nbsp;Hz fault][djbkwon-fix] is also unexplained. At 240&nbsp;Hz each of the panel's 1,440 rows gets under 2.9&nbsp;µs to switch on, half the time it gets at 120&nbsp;Hz (my calculation), so a gate drive near its limit would fail there first. That fits reading (a), but the supply measurements in [section 6](#section-7) show supplies that are absent, not ones that are slightly weak.
+The [240&nbsp;Hz fault][djbkwon-fix] is also unexplained. At 240&nbsp;Hz each of the panel's 1,440 rows gets under 2.9&nbsp;µs to switch on, half the time it gets at 120&nbsp;Hz (calculated for this report), so a gate drive near its limit would fail there first. That fits reading (a), but the supply measurements in [section 6](#section-7) show supplies that are absent, not ones that are slightly weak.
 
 ## 8. What Samsung has published {#section-9}
 
@@ -237,7 +237,7 @@ The original board is the better place to start, because its divider is traced t
 - Repair outcomes come from self-selected forum posts and comments. The counts in figure 4 are counts of owners' reports, not a measured success rate, and 44 of the 59 reports do not say which board the owner had.
 - The original board's assembly number, BN96-51198A, is inferred from its label and the parts lists, not printed on the board.
 - Seven Korean forum threads could not be read because of a bot check, and press and Russian-language coverage is thin.
-- This report was compiled by u/djbkwon with an AI research assistant. Every claim links to its source. To correct it, [open an issue or propose an edit on GitHub](https://github.com/danieljbk/samsung-odyssey-g9-black-screen); the PDF rebuilds itself from the corrected text.
+- This report was researched and written by Claude, an AI model made by Anthropic, at the request of u/djbkwon; u/djbkwon did not write it. Every claim links to its source. To correct it, [open an issue or propose an edit on GitHub](https://github.com/danieljbk/samsung-odyssey-g9-black-screen); the PDF rebuilds itself from the corrected text.
 
 ## Appendix: board and part numbers {#section-12}
 

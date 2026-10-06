@@ -35,7 +35,8 @@ RUNNING_TITLE = 'Samsung Odyssey G9 black screen'
 DATE = '6 October 2026'
 REPOSITORY = 'https://github.com/danieljbk/samsung-odyssey-g9-black-screen'
 META = [
-    ('Compiled by', 'u/djbkwon'),
+    ('Written by', 'Claude (AI, Anthropic)'),
+    ('Requested by', 'u/djbkwon'),
     ('Date', DATE),
     ('Models', 'C49G95T, S49AG95'),
     ('Corrections', 'on GitHub'),
@@ -44,8 +45,8 @@ META = [
 CSS = (
     # The cover has no disclaimer to pin to the page foot, so it takes its natural
     # height; the fixed height in report.css lets the contents list overflow.
-    '.cover { height: auto; }\n.toc-label { margin-top: 9mm; }\n'
-    '.toc-compact a { padding: 1.4mm 0; }\n'
+    '.cover { height: auto; }\n.toc-label { margin-top: 7mm; }\n'
+    '.toc-compact a { padding: 1.1mm 0; }\n'
     'figure svg { display: block; width: 100%; height: auto; }\n'
     # Links are shown in the accent colour, so a reader knows the sources are clickable.
     'main a, .meta a { color: var(--accent); }\n'
@@ -68,7 +69,7 @@ CSS = (
     # On a screen the report is a column of readable width rather than a sheet of paper.
     '@media screen { body { max-width: 170mm; margin: 12mm auto; padding: 0 6mm; } .toc-page { display: none; } }\n'
     '@media print { .screen-only { display: none; } }\n'
-    '.meta { grid-template-columns: repeat(5, auto); }\n'
+    '.meta { grid-template-columns: repeat(3, auto); row-gap: 3mm; }\n'
 )
 
 
