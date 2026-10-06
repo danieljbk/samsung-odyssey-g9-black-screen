@@ -1,0 +1,46 @@
+<svg viewBox="0 0 520 270" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" font-size="11" fill="#26262b">
+  <!-- left panel: original board, upper-left corner -->
+  <text x="10" y="16" font-weight="600">Original board</text>
+  <text x="10" y="31" fill="#6b6b76" font-size="10">printed "49DQ_JU11B4H26B"; upper-left corner</text>
+  <path d="M10,48 L250,48 L250,250 L10,250 Z" fill="#e9f3ec" stroke="#5f8f6e" stroke-width="1.2"/>
+  <!-- slot isolating the corner tab -->
+  <path d="M100,48 L100,150 L10,150" fill="none" stroke="#ffffff" stroke-width="7"/>
+  <path d="M100,48 L100,150 L10,150" fill="none" stroke="#5f8f6e" stroke-width="1" stroke-dasharray="0"/>
+  <text x="106" y="142" fill="#5f8f6e" font-size="9.5">slot cut in the board</text>
+  <!-- three parts on the tab -->
+  <rect x="42" y="66" width="26" height="14" rx="1.5" fill="#26262b" stroke="#d03b3b" stroke-width="2.5"/>
+  <rect x="42" y="90" width="26" height="14" rx="1.5" fill="#3a3a40"/>
+  <rect x="42" y="114" width="26" height="14" rx="1.5" fill="#3a3a40"/>
+  <text x="72" y="77" font-size="9.5" fill="#d03b3b" font-weight="700">THA1</text>
+  <text x="74" y="101" font-size="9.5" fill="#26262b">RA13</text>
+  <text x="74" y="125" font-size="9.5" fill="#26262b">RA14</text>
+  <!-- nearby labels -->
+  <text x="120" y="72" font-size="9.5" fill="#5f8f6e">printed nearby:</text>
+  <text x="120" y="86" font-size="9.5" fill="#5f8f6e">THA1 RA13 RA14</text>
+  <text x="120" y="100" font-size="9.5" fill="#5f8f6e">CPV1 to CPV6, STV</text>
+  <rect x="150" y="170" width="70" height="60" rx="3" fill="#3a3a40"/>
+  <text x="185" y="204" text-anchor="middle" fill="#ffffff" font-size="9">RT6949B</text>
+  <!-- right panel: newer board, top-right corner -->
+  <text x="270" y="16" font-weight="600">Newer board</text>
+  <text x="270" y="31" fill="#6b6b76" font-size="10">printed "OSCAR_T_TCON_MNT"; top-right corner</text>
+  <path d="M270,48 L510,48 L510,250 L270,250 Z" fill="#e9f3ec" stroke="#5f8f6e" stroke-width="1.2"/>
+  <!-- connector at right edge -->
+  <rect x="478" y="60" width="22" height="120" rx="2" fill="#3a3a40"/>
+  <text x="472" y="196" text-anchor="end" font-size="9.5" fill="#5f8f6e">CN501</text>
+  <!-- tape outline -->
+  <rect x="356" y="56" width="110" height="120" rx="4" fill="#fffbe8" fill-opacity="0.7" stroke="#c9a227" stroke-dasharray="5 3"/>
+  <text x="362" y="70" font-size="9.5" fill="#9a7a10">under tape</text>
+  <!-- column of four parts -->
+  <rect x="390" y="82" width="28" height="14" rx="1.5" fill="#26262b" stroke="#d03b3b" stroke-width="2.5"/>
+  <rect x="390" y="104" width="28" height="14" rx="1.5" fill="#3a3a40"/>
+  <rect x="384" y="126" width="16" height="22" rx="1.5" fill="#3a3a40"/>
+  <rect x="408" y="126" width="16" height="22" rx="1.5" fill="#3a3a40"/>
+  <text x="350" y="88" text-anchor="end" font-size="9.5" fill="#d03b3b" font-weight="700">the thermistor:</text>
+  <text x="350" y="100" text-anchor="end" font-size="9.5" fill="#d03b3b" font-weight="700">no printed code</text>
+  <line x1="352" y1="90" x2="388" y2="89" stroke="#d03b3b" stroke-width="1.2"/>
+  <text x="428" y="122" font-size="9.5" fill="#5f8f6e">ZC503</text>
+  <text x="362" y="166" font-size="9.5" fill="#5f8f6e">R354 R352 P301 R353</text>
+  <!-- CN703 below-left -->
+  <rect x="300" y="196" width="60" height="16" rx="2" fill="#3a3a40"/>
+  <text x="330" y="228" text-anchor="middle" font-size="9.5" fill="#5f8f6e">CN703</text>
+</svg>
